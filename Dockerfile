@@ -14,7 +14,7 @@ RUN tar xzf teeworlds.tar.gz \
  && mv /opt/teeworlds*/ /opt/teeworlds 
 
 VOLUME /data
-EXPOSE 8303/tcp
+EXPOSE 8303/udp
 
 ENTRYPOINT ["/opt/start.sh"]
 CMD ["--"]
